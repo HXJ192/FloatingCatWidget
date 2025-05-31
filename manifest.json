@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Floating Cat Widget",
+  "version": "1.0",
+  "description": "A cute floating cat widget that can be dragged around on any webpage",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["style.css"]
+    }
+  ],
+  "permissions": ["activeTab"]
+}
